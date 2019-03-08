@@ -10,3 +10,26 @@ C:\Users\kinge\Documents\GitHub\LAB4\LAB4\obj\Debug\LAB4.vbproj.CoreCompileInput
 C:\Users\kinge\Documents\GitHub\LAB4\LAB4\obj\Debug\LAB4.exe
 C:\Users\kinge\Documents\GitHub\LAB4\LAB4\obj\Debug\LAB4.xml
 C:\Users\kinge\Documents\GitHub\LAB4\LAB4\obj\Debug\LAB4.pdb
+C:\Users\Sterling\OneDrive\LAB4 - Copy\LAB4\bin\Debug\LAB4.exe.config
+C:\Users\Sterling\OneDrive\LAB4 - Copy\LAB4\bin\Debug\LAB4.exe
+C:\Users\Sterling\OneDrive\LAB4 - Copy\LAB4\bin\Debug\LAB4.pdb
+C:\Users\Sterling\OneDrive\LAB4 - Copy\LAB4\bin\Debug\LAB4.xml
+C:\Users\Sterling\OneDrive\LAB4 - Copy\LAB4\obj\Debug\LAB4.vbprojResolveAssemblyReference.cache
+C:\Users\Sterling\OneDrive\LAB4 - Copy\LAB4\obj\Debug\LAB4.frmLAB4.resources
+C:\Users\Sterling\OneDrive\LAB4 - Copy\LAB4\obj\Debug\LAB4.Resources.resources
+C:\Users\Sterling\OneDrive\LAB4 - Copy\LAB4\obj\Debug\LAB4.vbproj.GenerateResource.Cache
+C:\Users\Sterling\OneDrive\LAB4 - Copy\LAB4\obj\Debug\LAB4.exe
+C:\Users\Sterling\OneDrive\LAB4 - Copy\LAB4\obj\Debug\LAB4.xml
+C:\Users\Sterling\OneDrive\LAB4 - Copy\LAB4\obj\Debug\LAB4.pdb
+C:\Users\kinge\OneDrive\LAB4 - Copy\LAB4\bin\Debug\LAB4.exe.config
+C:\Users\kinge\OneDrive\LAB4 - Copy\LAB4\bin\Debug\LAB4.exe
+C:\Users\kinge\OneDrive\LAB4 - Copy\LAB4\bin\Debug\LAB4.pdb
+C:\Users\kinge\OneDrive\LAB4 - Copy\LAB4\bin\Debug\LAB4.xml
+C:\Users\kinge\OneDrive\LAB4 - Copy\LAB4\obj\Debug\LAB4.vbprojAssemblyReference.cache
+C:\Users\kinge\OneDrive\LAB4 - Copy\LAB4\obj\Debug\LAB4.frmLAB4.resources
+C:\Users\kinge\OneDrive\LAB4 - Copy\LAB4\obj\Debug\LAB4.Resources.resources
+C:\Users\kinge\OneDrive\LAB4 - Copy\LAB4\obj\Debug\LAB4.vbproj.GenerateResource.cache
+C:\Users\kinge\OneDrive\LAB4 - Copy\LAB4\obj\Debug\LAB4.vbproj.CoreCompileInputs.cache
+C:\Users\kinge\OneDrive\LAB4 - Copy\LAB4\obj\Debug\LAB4.exe
+C:\Users\kinge\OneDrive\LAB4 - Copy\LAB4\obj\Debug\LAB4.xml
+C:\Users\kinge\OneDrive\LAB4 - Copy\LAB4\obj\Debug\LAB4.pdb

@@ -35,7 +35,7 @@ Partial Class frmLAB4
         Me.txtPrice = New System.Windows.Forms.TextBox()
         Me.chkNew = New System.Windows.Forms.CheckBox()
         Me.cmbMake = New System.Windows.Forms.ComboBox()
-        Me.cmbPrice = New System.Windows.Forms.ComboBox()
+        Me.cmbYear = New System.Windows.Forms.ComboBox()
         Me.lvwOutput = New System.Windows.Forms.ListView()
         Me.colNew = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.colID = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -85,7 +85,7 @@ Partial Class frmLAB4
         Me.lblMake.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMake.Location = New System.Drawing.Point(3, 24)
         Me.lblMake.Name = "lblMake"
-        Me.lblMake.Size = New System.Drawing.Size(65, 20)
+        Me.lblMake.Size = New System.Drawing.Size(65, 21)
         Me.lblMake.TabIndex = 4
         Me.lblMake.Text = "Make:"
         Me.lblMake.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -95,7 +95,7 @@ Partial Class frmLAB4
         Me.lblModel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblModel.Location = New System.Drawing.Point(3, 55)
         Me.lblModel.Name = "lblModel"
-        Me.lblModel.Size = New System.Drawing.Size(65, 20)
+        Me.lblModel.Size = New System.Drawing.Size(65, 21)
         Me.lblModel.TabIndex = 5
         Me.lblModel.Text = "Model:"
         Me.lblModel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -105,7 +105,7 @@ Partial Class frmLAB4
         Me.lblYear.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblYear.Location = New System.Drawing.Point(3, 85)
         Me.lblYear.Name = "lblYear"
-        Me.lblYear.Size = New System.Drawing.Size(65, 20)
+        Me.lblYear.Size = New System.Drawing.Size(65, 21)
         Me.lblYear.TabIndex = 6
         Me.lblYear.Text = "Year:"
         Me.lblYear.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -123,9 +123,9 @@ Partial Class frmLAB4
         'lblPrice
         '
         Me.lblPrice.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrice.Location = New System.Drawing.Point(3, 121)
+        Me.lblPrice.Location = New System.Drawing.Point(3, 117)
         Me.lblPrice.Name = "lblPrice"
-        Me.lblPrice.Size = New System.Drawing.Size(65, 20)
+        Me.lblPrice.Size = New System.Drawing.Size(65, 21)
         Me.lblPrice.TabIndex = 8
         Me.lblPrice.Text = "Price:"
         Me.lblPrice.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -139,7 +139,7 @@ Partial Class frmLAB4
         '
         'txtPrice
         '
-        Me.txtPrice.Location = New System.Drawing.Point(68, 120)
+        Me.txtPrice.Location = New System.Drawing.Point(68, 116)
         Me.txtPrice.Name = "txtPrice"
         Me.txtPrice.Size = New System.Drawing.Size(100, 20)
         Me.txtPrice.TabIndex = 10
@@ -159,23 +159,26 @@ Partial Class frmLAB4
         '
         Me.cmbMake.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbMake.FormattingEnabled = True
+        Me.cmbMake.Items.AddRange(New Object() {"Ford", "Chevy", "Nissan", "Honda", "Toyota"})
         Me.cmbMake.Location = New System.Drawing.Point(68, 25)
         Me.cmbMake.Name = "cmbMake"
         Me.cmbMake.Size = New System.Drawing.Size(121, 21)
         Me.cmbMake.TabIndex = 12
         '
-        'cmbPrice
+        'cmbYear
         '
-        Me.cmbPrice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbPrice.FormattingEnabled = True
-        Me.cmbPrice.Location = New System.Drawing.Point(69, 86)
-        Me.cmbPrice.Name = "cmbPrice"
-        Me.cmbPrice.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.cmbPrice.Size = New System.Drawing.Size(121, 21)
-        Me.cmbPrice.TabIndex = 13
+        Me.cmbYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbYear.FormattingEnabled = True
+        Me.cmbYear.Items.AddRange(New Object() {"2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"})
+        Me.cmbYear.Location = New System.Drawing.Point(69, 86)
+        Me.cmbYear.Name = "cmbYear"
+        Me.cmbYear.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.cmbYear.Size = New System.Drawing.Size(121, 21)
+        Me.cmbYear.TabIndex = 13
         '
         'lvwOutput
         '
+        Me.lvwOutput.BackColor = System.Drawing.SystemColors.Window
         Me.lvwOutput.CheckBoxes = True
         Me.lvwOutput.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.colNew, Me.colID, Me.colMake, Me.colModel, Me.colYear, Me.colPrice})
         Me.lvwOutput.FullRowSelect = True
@@ -218,7 +221,7 @@ Partial Class frmLAB4
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(484, 561)
         Me.Controls.Add(Me.lvwOutput)
-        Me.Controls.Add(Me.cmbPrice)
+        Me.Controls.Add(Me.cmbYear)
         Me.Controls.Add(Me.cmbMake)
         Me.Controls.Add(Me.chkNew)
         Me.Controls.Add(Me.txtPrice)
@@ -255,7 +258,7 @@ Partial Class frmLAB4
     Friend WithEvents txtPrice As TextBox
     Friend WithEvents chkNew As CheckBox
     Friend WithEvents cmbMake As ComboBox
-    Friend WithEvents cmbPrice As ComboBox
+    Friend WithEvents cmbYear As ComboBox
     Friend WithEvents lvwOutput As ListView
     Friend WithEvents colNew As ColumnHeader
     Friend WithEvents colID As ColumnHeader
