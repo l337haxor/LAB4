@@ -3,8 +3,8 @@
 Public Class Car
 
 
-    Private Shared carCount As Integer
-    Private Shared carIDNumber As Integer = 1
+    Private Shared carCount As Integer = 0
+    Private carIDNumber As Integer = 0
     Private carMake As String = String.Empty
     Private carModel As String = String.Empty
     Private carYear As Integer = 1900
@@ -83,7 +83,7 @@ Public Class Car
     End Property
     Public Function CarString() As String
 
-        Return "Car Details " & carMake & " " & carModel & " " & carYear & ", " & carPrice & ". " & IIf(carNewStatus = True, "New", "Used").ToString()
+        Return "Car Details: " & carMake & ", " & carModel & ", " & carYear.ToString & ", " & carPrice.ToString & ". " & IIf(carNewStatus = True, "New", "Used").ToString()
 
     End Function
 
