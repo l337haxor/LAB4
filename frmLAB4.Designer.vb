@@ -56,6 +56,7 @@ Partial Class frmLAB4
         '
         'btnReset
         '
+        Me.btnReset.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnReset.Location = New System.Drawing.Point(248, 508)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(109, 41)
@@ -217,8 +218,10 @@ Partial Class frmLAB4
         '
         'frmLAB4
         '
+        Me.AcceptButton = Me.btnEnter
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.btnReset
         Me.ClientSize = New System.Drawing.Size(484, 561)
         Me.Controls.Add(Me.lvwOutput)
         Me.Controls.Add(Me.cmbYear)
@@ -235,6 +238,7 @@ Partial Class frmLAB4
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.btnEnter)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmLAB4"
