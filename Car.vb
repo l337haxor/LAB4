@@ -83,7 +83,7 @@ Public Class Car
     End Property
     Public Function CarString() As String
 
-        Return "Car Details: " & carMake & ", " & carModel & ", " & carYear.ToString & ", " & carPrice.ToString & ". " & IIf(carNewStatus = True, "New", "Used").ToString()
+        Return "Car Details: " & "Make: " & carMake & ", " & "Model: " & carModel & ", " & "Year: " & carYear.ToString & ", " & "Price: " & carPrice.ToString & ". " & "Status: " & IIf(carNewStatus = True, "New", "Used").ToString()
 
     End Function
 

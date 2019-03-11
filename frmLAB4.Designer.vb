@@ -22,6 +22,7 @@ Partial Class frmLAB4
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btnEnter = New System.Windows.Forms.Button()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
@@ -43,6 +44,7 @@ Partial Class frmLAB4
         Me.colModel = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.colYear = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.colPrice = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ToolTipCar = New System.Windows.Forms.ToolTip(Me.components)
         Me.SuspendLayout()
         '
         'btnEnter
@@ -50,8 +52,9 @@ Partial Class frmLAB4
         Me.btnEnter.Location = New System.Drawing.Point(129, 508)
         Me.btnEnter.Name = "btnEnter"
         Me.btnEnter.Size = New System.Drawing.Size(109, 41)
-        Me.btnEnter.TabIndex = 0
+        Me.btnEnter.TabIndex = 8
         Me.btnEnter.Text = "&Enter"
+        Me.ToolTipCar.SetToolTip(Me.btnEnter, "Click to insert car into listbox")
         Me.btnEnter.UseVisualStyleBackColor = True
         '
         'btnReset
@@ -60,8 +63,9 @@ Partial Class frmLAB4
         Me.btnReset.Location = New System.Drawing.Point(248, 508)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(109, 41)
-        Me.btnReset.TabIndex = 1
+        Me.btnReset.TabIndex = 9
         Me.btnReset.Text = "&Reset"
+        Me.ToolTipCar.SetToolTip(Me.btnReset, "Click to reset form")
         Me.btnReset.UseVisualStyleBackColor = True
         '
         'btnExit
@@ -69,17 +73,20 @@ Partial Class frmLAB4
         Me.btnExit.Location = New System.Drawing.Point(363, 508)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(109, 41)
-        Me.btnExit.TabIndex = 2
+        Me.btnExit.TabIndex = 10
         Me.btnExit.Text = "E&xit"
+        Me.ToolTipCar.SetToolTip(Me.btnExit, "Click to exit program")
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'lblOutput
         '
         Me.lblOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblOutput.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOutput.Location = New System.Drawing.Point(3, 360)
         Me.lblOutput.Name = "lblOutput"
         Me.lblOutput.Size = New System.Drawing.Size(469, 145)
-        Me.lblOutput.TabIndex = 3
+        Me.lblOutput.TabIndex = 7
+        Me.ToolTipCar.SetToolTip(Me.lblOutput, "Output")
         '
         'lblMake
         '
@@ -87,7 +94,7 @@ Partial Class frmLAB4
         Me.lblMake.Location = New System.Drawing.Point(3, 24)
         Me.lblMake.Name = "lblMake"
         Me.lblMake.Size = New System.Drawing.Size(65, 21)
-        Me.lblMake.TabIndex = 4
+        Me.lblMake.TabIndex = 11
         Me.lblMake.Text = "Make:"
         Me.lblMake.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -97,7 +104,7 @@ Partial Class frmLAB4
         Me.lblModel.Location = New System.Drawing.Point(3, 55)
         Me.lblModel.Name = "lblModel"
         Me.lblModel.Size = New System.Drawing.Size(65, 21)
-        Me.lblModel.TabIndex = 5
+        Me.lblModel.TabIndex = 12
         Me.lblModel.Text = "Model:"
         Me.lblModel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -107,7 +114,7 @@ Partial Class frmLAB4
         Me.lblYear.Location = New System.Drawing.Point(3, 85)
         Me.lblYear.Name = "lblYear"
         Me.lblYear.Size = New System.Drawing.Size(65, 21)
-        Me.lblYear.TabIndex = 6
+        Me.lblYear.TabIndex = 13
         Me.lblYear.Text = "Year:"
         Me.lblYear.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -117,7 +124,7 @@ Partial Class frmLAB4
         Me.lblNew.Location = New System.Drawing.Point(2, 156)
         Me.lblNew.Name = "lblNew"
         Me.lblNew.Size = New System.Drawing.Size(65, 20)
-        Me.lblNew.TabIndex = 7
+        Me.lblNew.TabIndex = 15
         Me.lblNew.Text = "New:"
         Me.lblNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -127,7 +134,7 @@ Partial Class frmLAB4
         Me.lblPrice.Location = New System.Drawing.Point(3, 117)
         Me.lblPrice.Name = "lblPrice"
         Me.lblPrice.Size = New System.Drawing.Size(65, 21)
-        Me.lblPrice.TabIndex = 8
+        Me.lblPrice.TabIndex = 14
         Me.lblPrice.Text = "Price:"
         Me.lblPrice.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -136,14 +143,16 @@ Partial Class frmLAB4
         Me.txtModel.Location = New System.Drawing.Point(69, 55)
         Me.txtModel.Name = "txtModel"
         Me.txtModel.Size = New System.Drawing.Size(100, 20)
-        Me.txtModel.TabIndex = 9
+        Me.txtModel.TabIndex = 2
+        Me.ToolTipCar.SetToolTip(Me.txtModel, "Enter a Model")
         '
         'txtPrice
         '
         Me.txtPrice.Location = New System.Drawing.Point(68, 116)
         Me.txtPrice.Name = "txtPrice"
         Me.txtPrice.Size = New System.Drawing.Size(100, 20)
-        Me.txtPrice.TabIndex = 10
+        Me.txtPrice.TabIndex = 4
+        Me.ToolTipCar.SetToolTip(Me.txtPrice, "Enter a Price (greater than 0)")
         '
         'chkNew
         '
@@ -152,8 +161,9 @@ Partial Class frmLAB4
         Me.chkNew.Location = New System.Drawing.Point(68, 159)
         Me.chkNew.Name = "chkNew"
         Me.chkNew.Size = New System.Drawing.Size(15, 14)
-        Me.chkNew.TabIndex = 11
+        Me.chkNew.TabIndex = 5
         Me.chkNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.ToolTipCar.SetToolTip(Me.chkNew, "New or used")
         Me.chkNew.UseVisualStyleBackColor = True
         '
         'cmbMake
@@ -164,7 +174,8 @@ Partial Class frmLAB4
         Me.cmbMake.Location = New System.Drawing.Point(68, 25)
         Me.cmbMake.Name = "cmbMake"
         Me.cmbMake.Size = New System.Drawing.Size(121, 21)
-        Me.cmbMake.TabIndex = 12
+        Me.cmbMake.TabIndex = 1
+        Me.ToolTipCar.SetToolTip(Me.cmbMake, "Select a Make")
         '
         'cmbYear
         '
@@ -175,20 +186,23 @@ Partial Class frmLAB4
         Me.cmbYear.Name = "cmbYear"
         Me.cmbYear.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.cmbYear.Size = New System.Drawing.Size(121, 21)
-        Me.cmbYear.TabIndex = 13
+        Me.cmbYear.TabIndex = 3
+        Me.ToolTipCar.SetToolTip(Me.cmbYear, "Select a Year")
         '
         'lvwOutput
         '
         Me.lvwOutput.BackColor = System.Drawing.SystemColors.Window
         Me.lvwOutput.CheckBoxes = True
         Me.lvwOutput.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.colNew, Me.colID, Me.colMake, Me.colModel, Me.colYear, Me.colPrice})
+        Me.lvwOutput.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lvwOutput.FullRowSelect = True
         Me.lvwOutput.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
         Me.lvwOutput.Location = New System.Drawing.Point(5, 189)
         Me.lvwOutput.MultiSelect = False
         Me.lvwOutput.Name = "lvwOutput"
         Me.lvwOutput.Size = New System.Drawing.Size(469, 168)
-        Me.lvwOutput.TabIndex = 14
+        Me.lvwOutput.TabIndex = 6
+        Me.ToolTipCar.SetToolTip(Me.lvwOutput, "Car Inventory")
         Me.lvwOutput.UseCompatibleStateImageBehavior = False
         Me.lvwOutput.View = System.Windows.Forms.View.Details
         '
@@ -199,14 +213,17 @@ Partial Class frmLAB4
         'colID
         '
         Me.colID.Text = "ID."
+        Me.colID.Width = 36
         '
         'colMake
         '
         Me.colMake.Text = "Make"
+        Me.colMake.Width = 93
         '
         'colModel
         '
         Me.colModel.Text = "Model"
+        Me.colModel.Width = 109
         '
         'colYear
         '
@@ -215,6 +232,10 @@ Partial Class frmLAB4
         'colPrice
         '
         Me.colPrice.Text = "Price"
+        Me.colPrice.Width = 98
+        '
+        'ToolTipCar
+        '
         '
         'frmLAB4
         '
@@ -270,4 +291,5 @@ Partial Class frmLAB4
     Friend WithEvents colModel As ColumnHeader
     Friend WithEvents colYear As ColumnHeader
     Friend WithEvents colPrice As ColumnHeader
+    Friend WithEvents ToolTipCar As ToolTip
 End Class
